@@ -1,0 +1,21 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+class Solution41 {
++main
+- define scanner
+- define names array
+- call readNamesFromInput to read input file
+- sort the names in alphabetical order
+- close scanner
+- write names output to output file
++readNamesFromInput
+- take in scanner and names array
+- scan in the names from the input file
++outputNames
+- take in names array
+- print output names to output file
+}
+
+@enduml

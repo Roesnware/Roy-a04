@@ -16,7 +16,7 @@ public class Solution41 {
         Solution41 sol2 = new Solution41();
 
         // create a scanner to read from input file
-        Scanner inputFileReader = new Scanner(new File("./src/main/resources/exercise41_input.txt"));
+        Scanner inputFileReader = new Scanner(new File("./data/exercise41_input.txt"));
 
         // declare an ArrayList for Strings to store the input names from the file
         ArrayList<String> names = new ArrayList<>();
@@ -44,7 +44,7 @@ public class Solution41 {
     public void outputNames(ArrayList<String> names) throws IOException {
 
         // create a file writer for output file
-        FileWriter output = new FileWriter("./src/main/resources/exercise41_output.txt");
+        FileWriter output = new FileWriter("./data/exercise41_output.txt");
 
         // write the number of names to the output file and put a line spacer
         output.write("Total of "+names.size()+" names\n");
