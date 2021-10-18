@@ -3,15 +3,25 @@
 
 
 class Solution45 {
-
++inputMethod
+- promts for input and returns string
++main
+- incorporate all the classes to execute the task 
 }
 
 class WriteFile {
-
++writeFile
+- takes String name and Array list
+makes a file write for output file
++printToOutputFile
+- writes in use for utilize in output file
 }
 
 class ReadFile {
-
++getUtilize
+- scans the data in file for a temp array to modify later
++readFile
+- read whole file till null
 }
 
 @enduml
