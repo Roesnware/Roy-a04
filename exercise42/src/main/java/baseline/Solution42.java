@@ -12,37 +12,39 @@ import java.util.Scanner;
 
 public class Solution42 {
 
-    // constant scanner for String input
-
-    // input method for salary
-    private String inputMethod() {
-    }
-
     // main
     public static void main(String[] args) {
 
         // class variable sol
+        Solution42 sol = new Solution42();
 
         // print header
+        System.out.printf("%-17s%-17s%-17s\n", "Last", "First", "Salary");
 
         // print line spacer
+        System.out.println("----------------------------------------");
 
-        // print to output file using printOutput
+        // print using printOutput
+        sol.printOutput("./data/exercise42_input.txt");
     }
 
     // output method
     public void printOutput(String filename) {
         // try to read input file
         try {
+            File file = new File(filename);
+            Scanner in = new Scanner(file);
 
             // continue while there's a name on next line, parse using regex
             while (in.hasNext()) {
-
+                String scan = in.nextLine();
+                String[] temp = scan.split(",");
+                System.out.printf("%-17s%-17s%-17s\n", temp[0], temp[1], temp[2]);
             }
 
             // else no file print exception
         } catch (FileNotFoundException ex) {
-
+            System.out.println("Error: File Not Found!!");
         }
     }
 }
