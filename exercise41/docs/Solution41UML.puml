@@ -3,19 +3,24 @@
 
 
 class Solution41 {
-+main
-- define scanner
-- define names array
-- call readNamesFromInput to read input file
-- sort the names in alphabetical order
-- close scanner
-- write names output to output file
-+readNamesFromInput
-- take in scanner and names array
-- scan in the names from the input file
-+outputNames
-- take in names array
-- print output names to output file
++main(args String)
+in main:
+define scanner
+define names array
+call readNamesFromInput to read input file
+sort the names in alphabetical order
+close scanner
+write names output to output file
+
+in readnamesfrominput:
++readNamesFromInput(Scanner in, ArrayList<String> names)
+take in scanner and names array
+scan in the names from the input file
+
+in outputnames:
++outputNames(ArrayList<String> names)
+take in names array
+print output names to output file
 }
 
 @enduml
